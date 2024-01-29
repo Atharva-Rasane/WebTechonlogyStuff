@@ -1,0 +1,14 @@
+
+
+<div style="background-image: url('../../../assets/img/hero-bac-1.jpg'); height: 100vh;">
+    <div class="container">
+        <div class="p-3" *ngIf="this.testservice.paid == 0; else elseBlock"  style="background-color: aliceblue; width: 25%; position: absolute; top: 200px; left: 60vh;">
+            <app-form ></app-form>
+        </div>
+        <ng-template #elseBlock>
+            <app-paid></app-paid>
+        </ng-template>    
+    </div>
+</div>
+<!-- <h1>{{this.testservice.paid}}</h1>
+<h1>{{this.testservice.total}}</h1> -->
